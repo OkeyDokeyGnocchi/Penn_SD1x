@@ -27,3 +27,35 @@ Begin by creating a 10 by 10 grid where you randomly place the moles. Place a to
 Now allow the user (remember how to use Scanner?) to enter the x and y coordinates of where they would like to take a whack. Tell them they have a maximum of 50 attempts to get all the moles. 
 At any point in the game, they can input coordinates of -1, -1 in order to indicate that they are giving up. If the user gives up they get to see the entire grid.  
 The game ends if the user is able to uncover all the moles or if the user runs out of attempts."
+
+## Homework 2 - Squarelotron
+- Write a program that will help us flip and rotate squarelotrons.
+
+"We also want you to write this program in a test driven manner. For each of the methods we describe below, please begin by writing the stub of a method and then writing unit tests for it (in SquarelotronTest.java)
+
+Make a class called Squarelotron with the following instance variables
+
+int[][] squarelotron
+
+int size
+
+Constructors:
+
+Squarelotron should have a constructor.
+
+Squarelotron(int n) - It fills the 2-dimensional array with the numbers 1 to n squared, in order. It also sets the size instance variable to be n.
+
+Note that you could do this with a switch statement for case 4,5,6,7 and 8 individually. That would not be considered wrong but you might want to pause and think about whether there is some kind of pattern that you can exploit which may be generalizable.
+
+Methods:
+Squarelotron upsideDownFlip(int ring)
+
+This method performs the Upside-Down Flip of the squarelotron, as described above, and returns the new squarelotron. The original squarelotron should not be modified (we will check for this).
+
+Squarelotron mainDiagonalFlip(int ring)
+
+This method performs the Main Diagonal Flip of the squarelotron, as described above, and returns the new squarelotron. The original squarelotron should not be modified (we will check for this).
+
+void rotateRight(int numberOfTurns)
+
+The argument numberOfTurns indicates the number of times the entire squarelotron should be rotated 90° clockwise. Any integer, including zero and negative integers, is allowable as the argument. A value of -1 indicates a 90° counterclockwise rotation. This method modifies the internal representation of the squarelotron; it does not create a new squarelotron."
